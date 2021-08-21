@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;web2/src/main/java/NomeServlet.java&apos; to &apos;AgendaServlet.java&apos;" description="Rename resource &apos;NomeServlet.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/NomeServlet.java" name="AgendaServlet.java" stamp="1629511562999" updateReferences="true"/>
+</session>

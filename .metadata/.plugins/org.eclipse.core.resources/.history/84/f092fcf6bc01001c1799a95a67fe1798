@@ -1,0 +1,37 @@
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.sun.org.apache.xml.internal.utils.DefaultErrorHandler;
+
+@WebServlet("/nome")
+public class nomeServlet  extends HttpServlet{
+	
+	private static final long serialVersionUID = 1L;
+	
+	public nomeServlet(){
+		super();
+	}
+	
+	protected void doGetNome(HttpServletRequest request,  HttpServletResponse response) throws ServletException, IOException{
+		
+		PrintWriter print = response.getWriter();
+		
+		print.write("<h1>Victor Murta Garcia<h1>");
+		
+		print.close();
+		
+		
+	}
+	
+	protected void doPostNome(HttpServletRequest request,  HttpServletResponse response) throws ServletException, IOException{
+		
+		doGetNome(request, response);
+		
+	}
+}
