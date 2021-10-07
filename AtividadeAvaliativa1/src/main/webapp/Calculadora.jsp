@@ -7,7 +7,7 @@
 <title>Calculadora</title>
 </head>
 <body>
-	<form action="CalculadoraServlet" method="get">
+	<form action="MostraCalculadoraServlet" method="get">
 		<h3>Somador de numeros</h3>
 		<input type="text" placeholder="Nome" name="n1"></input>
 		<input type="text" placeholder="Sobrenome" name="n2"></input>

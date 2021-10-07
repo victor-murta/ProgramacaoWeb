@@ -39,7 +39,6 @@ public class RecebeCalculadoraServlet extends HttpServlet {
 		saida.write("</form>");
 		saida.write("</HTML></BODY>");
 		saida.close();
-		
 	}
 
 	/**
