@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CPF</title>
+<script >
+	
+	const botao = document.getElementById("botao");
+	
+	function formatar(){
+		const input = document.getElementById("input-cpf");
+		const inputFormatado = input.value.replace(/^(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
+		alert("Cpf formatado: " + inputFormatado);
+	}
+</script>
+</head>
+<body style="display:block; ">
+	<section>
+		<h1 style=" margin-left: 40%; margin-right: 50%; width: 100%;" >Formatador de CPF</h1>
+	</section>
+	
+	<form  style="margin-top: 30px; margin-left: 40%; margin-right: 50%; width: 100%;"> 
+		<input id="input-cpf" placeholder="Insira seu cpf..." ></input>
+		<button type="submit" onclick="formatar()" id="botao">Formatar Cpf</button>
+	</form>
+</body>
+</html>
